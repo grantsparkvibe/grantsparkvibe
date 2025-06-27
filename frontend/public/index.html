@@ -1,20 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Grant Spark Vibe - Connect with grant opportunities"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>Grant Spark Vibe</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GrantSparkVibe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8fafc;
+      color: #1f2937;
+    }
+    header {
+      background-color: #3b82f6;
+      color: white;
+      padding: 3rem 2rem 2rem;
+      text-align: center;
+    }
+    .hero {
+      padding: 3rem 2rem;
+      background-color: #eff6ff;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+    .demo {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 1rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 1.75rem;
+      color: #2563eb;
+      margin-top: 2rem;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .pricing-table {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 2rem;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .pricing-card {
+      background-color: white;
+      border: 2px solid #cbd5e1;
+      border-radius: 10px;
+      padding: 1rem;
+      width: 250px;
+      text-align: center;
+    }
+    .pricing-card.popular {
+      border-color: #2563eb;
+      box-shadow: 0 0 10px rgba(37, 99, 235, 0.2);
+    }
+    .cta {
+      margin-top: 2rem;
+      background-color: #2563eb;
+      color: white;
+      padding: 1rem 2rem;
+      display: inline-block;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background: #f1f5f9;
+      color: #475569;
+    }
+    .faq {
+      background: #f1f5f9;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GrantSparkVibe</h1>
+    <p>AI-powered grant support for the people who need it most</p>
+  </header>
+
+  <section class="hero">
+    <h1>Unlock Funding Without the Overwhelm</h1>
+    <p>No more missed deadlines, confusing forms, or expensive consultants. GrantSparkVibe helps changemakers win grants using friendly AI.</p>
+    <div class="demo">
+      <p><strong>DEMO:</strong> "Hi, I’m Spark! Let’s find the perfect grant for your project in <em>3 steps</em>." [Chatbot demo coming soon]</p>
+    </div>
+    <a href="#" class="cta">Join the Waitlist</a>
+  </section>
+
+  <section>
+    <h2>Problem → Transformation</h2>
+    <p><strong>Before:</strong> You're spending days searching the web, second-guessing your proposal, and missing deadlines.</p>
+    <p><strong>After:</strong> You answer a few questions. GrantSparkVibe does the rest — grant discovery, proposal creation, and deadline tracking in one warm, human-like platform.</p>
+  </section>
+
+  <section>
+    <h2>Social Proof</h2>
+    <p>"I used to feel overwhelmed by grants — now I apply with confidence." — <em>Mary, Nairobi-based community leader</em></p>
+    <p>Trusted by early testers from grassroots projects in Kenya, Uganda, and Nigeria.</p>
+    <p><strong>100+</strong> proposals generated in private beta | <strong>85%</strong> user satisfaction</p>
+  </section>
+
+  <section>
+    <h2>Pricing</h2>
+    <div class="pricing-table">
+      <div class="pricing-card">
+        <h3>Free</h3>
+        <p>Basic grant search + 1 proposal/month</p>
+        <p>$0/month</p>
+      </div>
+      <div class="pricing-card popular">
+        <h3>Vibe+</h3>
+        <p>Unlimited proposals, smart suggestions, deadline reminders</p>
+        <p><strong>$5/month</strong></p>
+        <p><em>Most Popular</em></p>
+      </div>
+      <div class="pricing-card">
+        <h3>Partner</h3>
+        <p>Branded access for NGOs/networks</p>
+        <p>Contact us</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <h2>FAQ</h2>
+    <p><strong>Do I need technical skills?</strong><br>Not at all. If you can use WhatsApp, you can use GrantSparkVibe.</p>
+    <p><strong>Can I use it on my phone?</strong><br>Yes! It’s mobile-friendly and works in low-data mode.</p>
+    <p><strong>Is this really free?</strong><br>Yes. We want everyone to access funding. The premium plan supports development.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 GrantSparkVibe – Built with heart in Kenya by Winnie Diana<br>
+    <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> | <a href="#">Compare Plans</a> | <a href="#">Free Grant Template</a>
+  </footer>
+</body>
 </html>

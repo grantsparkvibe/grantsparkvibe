@@ -25,3 +25,5 @@ Thumbs.db
 
 # API keys and secrets
 config/secrets.json
+
+backend/.env
